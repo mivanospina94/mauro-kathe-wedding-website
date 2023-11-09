@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
 	let url = new URL(window.location.href);
 	let params = url.searchParams;
 	let guestId = null;
@@ -37,4 +37,4 @@ $(document).ready(function() {
 		const JsonString = bytesDesencriptados.toString(CryptoJS.enc.Utf8);
 		return JSON.parse(JsonString);
 	}
-});
+//});

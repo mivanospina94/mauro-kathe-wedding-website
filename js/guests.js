@@ -18,6 +18,12 @@ $(document).ready(function() {
 		$("#num_persons_1").text(guest.tickets);
 		$("#num_persons_2").text(guest.tickets);
 		$(".text-guests").text(guest.familia);
+		
+		if (guest.tickets === 1)
+			$("#tickets_text").text("Tenemos 1 lugar reservado para ti")
+		else
+			$("#tickets_text").text("Tenemos " + guest.tickets + " lugares reservados para ti")
+		
 	} else {
 		$(".guests").hide();
 		document.write("404 - Not Found");
